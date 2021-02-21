@@ -1,3 +1,5 @@
+package DefaultPackage;
+
 import file.ReUsableMethods;
 import file.payload;
 import io.restassured.RestAssured;

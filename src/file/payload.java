@@ -22,4 +22,64 @@ public class payload {
                 "  \"language\": \"English-IN\"\n" +
                 "}";
     }
+
+    //Create a Method - Having static to directly call the method to the test
+    public static String CoursePrice()
+    {
+        return "{\n" +
+                "\n" +
+                "\"dashboard\": {\n" +
+                "\n" +
+                "\"purchaseAmount\": 1162,\n" +
+                "\n" +
+                "\"website\": \"rahulshettyacademy.com\"\n" +
+                "\n" +
+                "},\n" +
+                "\n" +
+                "\"courses\": [\n" +
+                "\n" +
+                "{\n" +
+                "\n" +
+                "\"title\": \"Selenium Python\",\n" +
+                "\n" +
+                "\"price\": 50,\n" +
+                "\n" +
+                "\"copies\": 6\n" +
+                "\n" +
+                "},\n" +
+                "\n" +
+                "{\n" +
+                "\n" +
+                "\"title\": \"Cypress\",\n" +
+                "\n" +
+                "\"price\": 40,\n" +
+                "\n" +
+                "\"copies\": 4\n" +
+                "\n" +
+                "},\n" +
+                "\n" +
+                "{\n" +
+                "\n" +
+                "\"title\": \"RPA\",\n" +
+                "\n" +
+                "\"price\": 45,\n" +
+                "\n" +
+                "\"copies\": 10\n" +
+                "\n" +
+                "},\n" +
+                "\n" +
+                "{\n" +
+                "\n" +
+                "\"title\": \"Appium\",\n" +
+                "\n" +
+                "\"price\": 36,\n" +
+                "\n" +
+                "\"copies\": 7\n" +
+                "\n" +
+                "}\n" +
+                "\n" +
+                "]\n" +
+                "\n" +
+                "}";
+    }
 }
