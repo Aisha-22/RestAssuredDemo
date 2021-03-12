@@ -3,12 +3,13 @@ import file.payload;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import org.junit.Test;
+import org.testng.annotations.DataProvider;
 
 import static io.restassured.RestAssured.*;
 
 public class DynamicJson {
 
-    @Test//You can create a test without using Public Static void main
+    @Test(dataProvider = "BooksData")//You can create a test without using Public Static void main
     public void addBook()
     {
         //Store the response in a variable
@@ -31,5 +32,17 @@ public class DynamicJson {
 
         //Add and Delete, for the next time to be ready with clean data.
 
+    }
+    //Understanding TestNg Data provider for parameterization "@DataProvider -> Annotation name"
+    @DataProvider(name = "BooksData")
+    public Object[][] getData()
+    {
+        /*Set of data which you need for test, you need to send it as an Array
+        Array -> collection of elements =
+        Multidimensional arrays -> collection of arrays
+        Each array will hold the data for one set, and each array will have information for one book
+         */
+        return new Object[][] {{"All about Aisha's First Move", "Edition#01.08/03/2021"}, {"All about Aisha's First Move", "Edition#02.08/03/2022"},
+                {"All about Aisha's First Move", "Edition#03.08/03/2023"}};
     }
 }
